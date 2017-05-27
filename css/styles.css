@@ -1,0 +1,24 @@
+/*CSS Project X*/
+
+body {
+    color: #FFFFFF;
+    background-image: url("../assets/pinkdust.png");
+}
+.myHeader {
+	border: none;
+}
+
+img {
+	max-height: 200px;
+}
+
+figure {
+	float: left;
+	margin: 5px;
+	text-align: center;
+}
+
+.myContainer {
+	margin-left: 50px;
+}
+
