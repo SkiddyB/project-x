@@ -3,6 +3,7 @@
 body {
     color: #FFFFFF;
     background-image: url("../assets/pinkdust.png");
+    /*  background-color: #000000;*/
 }
 .myHeader {
 	border: none;
