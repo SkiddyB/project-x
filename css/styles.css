@@ -2,7 +2,7 @@
 
 body {
     color: #FFFFFF;
-    background-image: url("../assets/pinkdust.png");
+    background-image: url("../assets/backdrop.png");
     /*  background-color: #000000;*/
 }
 .myHeader {
@@ -11,6 +11,8 @@ body {
 
 img {
 	max-height: 200px;
+	
+   
 }
 
 figure {
