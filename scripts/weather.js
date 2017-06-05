@@ -4,7 +4,7 @@
 // This is our API key
     var APIKey = "ab689f1d5c07c4c51644a38ba8be3f81";
     // Here we are building the URL we need to query the database
-    var queryURL = "http://api.openweathermap.org/data/2.5/weather?" +
+    var queryURL = "https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?" +
       "q=Newburgh,NewYork&units=imperial&appid=" + APIKey;
     // Here we run our AJAX call to the OpenWeatherMap API
     $.ajax({
