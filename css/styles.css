@@ -1,15 +1,59 @@
 /*CSS Project X*/
 
 body {
-    color: #FFFFFF;
-    background-image: url("../assets/Homepage3.png");
+    font-family: Macondo;
+    background-image: url("../assets/backdrop.png");
+    /*background: url("../assets/backdrop.png") fixed ;
+    background-repeat: no-repeat;
+    background-size: contain;*/
+
     /*  background-color: #000000;*/
-}
-.myHeader {
-	border: none;
+    background-color: black;
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    background-image: radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 40px),
+    radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 30px), 
+    radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 40px), 
+    radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px);
 }
 
-img {
+.myStyle{
+	color: #FFFFFF;
+	font-size: 20px;
+	font-family: Macondo;
+}
+
+
+.myHeader {
+	color: #FFFFFF;
+	font-size: 20px;
+	/*border: none;*/
+}
+
+.myJumbotron {
+	/*background: url("../assets/nbny_map.jpg");
+	background-size: contain;*/
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../assets/logo.png");
+
+    background-size: 60%;
+
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.general {
 	max-height: 200px;
 	
    
@@ -21,7 +65,66 @@ figure {
 	text-align: center;
 }
 
-.myContainer {
+/*.myContainer {
 	margin-left: 50px;
+}*/
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sideIcon {
+	height: 50px;
+	margin: 10px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+
+
 

@@ -12,37 +12,88 @@
     <!-- my styling -->
     <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Ravi+Prakash|Calligraffitti|Droid+Sans|Macondo" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-<STYLE TYPE="text/css">
-<!-- 
-BODY {background-color: #FFFFFF; background-image: url("../assets/Homepage3.png"); background-repeat: no-repeat;background-position: 0% 0%}
--->
-</STYLE>
 </head>
 
 <body>
+<<<<<<< HEAD
     <div class="container myContainer" >
         <div class="page-header myHeader">
             <img src="assets/logo.png" class="center-block">
             <img src="assets/Newburgh_header_transparent.png" class="center-block">
+=======
+    <div class="container myContainer">
+        <div id="mySidenav" class="sidenav">
+            <a id="closeSideBar"></a>
+            <a href="#">About</a>
+            <a href="#">News</a>
+            <a href="#">Local Ads</a>
+            <a href="#">Contact</a>
+            <a href="#">Archives</a>
+            <a href="#">Video</a>
+            <img src="assets/facebook_icon.png" class="sideIcon">
+            <img src="assets/instagram_icon.png" class="sideIcon">
+            <img src="assets/twitter_icon.png" class="sideIcon">
+>>>>>>> 73cb1559f344ea231c9e7ec3ee227a26725770b9
         </div>
-        <div class="row">
-                <figure><img src="assets/libertystreet279.png"><figcaption>279 Liberty St</figcaption></figure>
-                <figure><img src="assets/Libertystreet300.jpg"><figcaption>300 Liberty St</figcaption></figure>
-                <figure><img src="assets/libertystreet403_405.jpg"><figcaption>403-405 Liberty St</figcaption></figure>
-        </div>
-        <div class="row">
-            <figure><img src="assets/bigjames.jpg"><figcaption>Big James !!</figcaption></figure>
-            <figure><img src="assets/flip.jpg"><figcaption>Flip</figcaption></figure>
-            <figure><img src="assets/momo.jpg"><figcaption>Mo Mo</figcaption></figure>
-            <figure><img src="assets/richard.jpg"><figcaption>Richard</figcaption></figure>
-            <figure><img src="assets/portrait1.jpg"><figcaption>Daryl Newkirk cousin</figcaption></figure>
-        </div>
-        <div class="row">
-            <figure><img src="assets/hayes.jpg"><figcaption>Percy and the Lil Sister</figcaption></figure>
-            
+        <!-- Use any element to open the sidenav -->
+
+
+        <!-- <span onclick="openNav()" class="glyphicon glyphicon-menu-hamburger">Menu</span> -->
+
+        <span id="openSideBar"></span>
+
+
+        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+        <div id="main">
+            <div class="page-header myHeader">
+                <img src="assets/newburgh_header_transparent.png" class="center-block">
+                <div class="row" id="tempStats">
+                    <div class="col-xs-4 col-lg-4" id="temp"></div>
+                    <div class="col-xs-2 col-lg-2" id="humidity"></div>
+                    <div class="col-xs-2 col-lg-2" id="tempMax"></div>
+                    <div class="col-xs-2 col-lg-2" id="tempMin"></div>
+                    <div class="col-xs-2 col-lg-2" id="wind"></div>
+                </div>
+            </div>
+            <div class="jumbotron parallax" id="myJumbotron">
+                <div class="row">
+                    <figure><img src="assets/libertystreet279.png" class="general">
+                        <figcaption>279 Liberty St</figcaption>
+                    </figure>
+                    <figure><img src="assets/Libertystreet300.jpg" class="general">
+                        <figcaption>300 Liberty St</figcaption>
+                    </figure>
+                    <figure><img src="assets/libertystreet403_405.jpg" class="general">
+                        <figcaption>403-405 Liberty St</figcaption>
+                    </figure>
+                </div>
+                <div class="row">
+                    <figure><img src="assets/bigjames.jpg" class="general">
+                        <figcaption>Big James !!</figcaption>
+                    </figure>
+                    <figure><img src="assets/flip.jpg" class="general">
+                        <figcaption>Flip</figcaption>
+                    </figure>
+                    <figure><img src="assets/momo.jpg" class="general">
+                        <figcaption>Mo Mo</figcaption>
+                    </figure>
+                    <figure><img src="assets/richard.jpg" class="general">
+                        <figcaption>Richard</figcaption>
+                    </figure>
+                    <figure><img src="assets/portrait1.jpg" class="general">
+                        <figcaption>Daryl Newkirk cousin</figcaption>
+                    </figure>
+                </div>
+                <div class="row">
+                    <figure><img src="assets/hayes.jpg">
+                        <figcaption>Percy and the Lil Sister</figcaption>
+                    </figure>
+                </div>
+            </div>
         </div>
     </div>
 </body>
-
+<script src="scripts/weather.js"></script>
+<script src="scripts/sidebar.js"></script>
 
 </html>
